@@ -1,3 +1,9 @@
+//string
 let movie:string='Inception';
 movie= 'The Dark Knight';
-movie=34;
+
+//number
+let age:number=100;
+
+//boolean
+let isAlive:boolean=true

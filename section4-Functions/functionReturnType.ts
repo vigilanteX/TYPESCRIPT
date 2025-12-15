@@ -29,3 +29,5 @@ console.log(sum(10,20));
 //     return;
 // }
 // greet("John");
+
+//void means returns undefined or null but never means it never returns anything

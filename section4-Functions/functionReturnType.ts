@@ -10,3 +10,22 @@ console.log(sum(10,20));
 // {
 //      `Hello, ${name}!`;
 // }
+
+// function meow(what:string):void
+// {
+// console.log(what);
+// }
+// meow("cat! ");
+
+//void returns undefined by default
+// function greet(name:string):void
+// {
+//   return undefined;
+// }
+
+//Type 'undefined' is not assignable to type 'never'.
+// function greet(name:string):never
+// {
+//     return;
+// }
+// greet("John");

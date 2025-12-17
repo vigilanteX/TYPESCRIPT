@@ -1,0 +1,1 @@
+let obj:{x:number, y?:number} = {x:10};

@@ -27,3 +27,12 @@ console.log(stuff);
 var stuff2 = [];
 stuff2 = [1, "a", true, 2, "b", false];
 console.log(stuff2);
+var bank = "WPAC";
+//below line will give error as value is not in defined literal types
+//bank="SBI"
+function getBankDetails(b) {
+    console.log("Bank selected is " + b);
+}
+getBankDetails("BOM");
+getBankDetails("SGB");
+//getBankDetails("SBI") //gives error

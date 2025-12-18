@@ -45,3 +45,19 @@ console.log(stuff);
 let stuff2: (number| string | boolean)[]=[];
 stuff2=[1,"a",true,2,"b",false];
 console.log(stuff2);
+
+
+//literal types with union
+type brand="WPAC"|"SGB"|"BOM"|"BSA"
+
+let bank:brand="WPAC";
+//below line will give error as value is not in defined literal types
+//bank="SBI"
+
+function getBankDetails(b:brand)
+{
+    console.log("Bank selected is "+b);
+}
+getBankDetails("BOM");
+getBankDetails("SGB");
+//getBankDetails("SBI") //gives error

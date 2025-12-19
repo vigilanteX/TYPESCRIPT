@@ -1,8 +1,8 @@
 class Player
 {
     //always property declaration is required in typescript
-    first:string;
-    last:string;
+    readonly first:string;
+    readonly last:string;
     score=0;//this works as well as we have assigned value to it and it can infer type number
     constructor(first:string,last:string)
     {
@@ -13,3 +13,4 @@ class Player
 }
 
 let player=new Player("Sachin","Tendulkar");
+//player.first="MS";//Cannot assign to 'first' because it is a read-only property.

@@ -8,3 +8,4 @@ var Player = /** @class */ (function () {
     return Player;
 }());
 var player = new Player("Sachin", "Tendulkar");
+//player.first="MS";//Cannot assign to 'first' because it is a read-only property.

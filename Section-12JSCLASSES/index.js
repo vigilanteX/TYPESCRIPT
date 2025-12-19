@@ -1,9 +1,11 @@
 class Player {
+  score = 0;
+  life = 10;
   constructor(name, age) {
     this.name = name;
     this.age = age;
-    this.score = 0;
-    this.life = 10;
+    // this.score = 0;
+    // this.life = 10;
     console.log("Player constructor created!");
   }
   taunt() {
@@ -24,4 +26,4 @@ console.log(p1.name);
 console.log(p1.age);
 p1.incrementScore();
 p1.incrementScore();
-console.log(p1.score);
+console.log(p1);

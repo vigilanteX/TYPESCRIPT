@@ -83,6 +83,10 @@ class Player {
 class AdminPlayer extends Player {
   #isAdmin = true;
   meowmaster = true;
+  constructor(power, name, age) {
+    super(name, age);
+    this.power = power;
+  }
 }
-let admin = new AdminPlayer();
+let admin = new AdminPlayer(["Bob", 30], "meowni", 33);
 console.log(admin);

@@ -18,6 +18,7 @@ class Player
     {
         console.log("This is secret method");
     }
+    //# makes the method truly private and cannot be accessed outside the class even using bracket notation
     #secretMethod2():void
     {
         console.log("This is secret method 2");

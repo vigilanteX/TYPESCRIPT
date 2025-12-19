@@ -28,9 +28,11 @@ let player = new Player("Sachin", "Tendulkar");
 //player.first="MS";//Cannot assign to 'first' because it is a read-only property.
 //Below code is same as we declare property as public and then assign with this.propName=propValue
 class Meow {
-    constructor(name, age) {
+    constructor(name, age, score) {
         this.name = name;
         this.age = age;
+        this.score = score;
     }
 }
-const m = new Meow("aman", 100);
+const m = new Meow("aman", 100, 1000);
+console.log(m);

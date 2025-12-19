@@ -34,9 +34,10 @@ let player=new Player("Sachin","Tendulkar");
 //Below code is same as we declare property as public and then assign with this.propName=propValue
 class Meow
 {
-    constructor(public name:string, public age:number)
+    constructor(public name:string, public age:number,private score:number)
     {
 
     }
 }
-const m=new Meow("aman",100)
+const m=new Meow("aman",100,1000)
+console.log(m)

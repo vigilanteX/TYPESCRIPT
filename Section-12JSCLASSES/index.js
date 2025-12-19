@@ -1,4 +1,5 @@
 class Player {
+  //this approach is called field declaration and is good when we have default values or hardcoded values
   score = 0;
   life = 10;
   constructor(name, age) {
@@ -26,4 +27,8 @@ console.log(p1.name);
 console.log(p1.age);
 p1.incrementScore();
 p1.incrementScore();
+console.log(p1);
+p1.decrementLife();
+console.log(p1);
+p1.decrementLife();
 console.log(p1);

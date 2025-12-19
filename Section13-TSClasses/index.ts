@@ -29,3 +29,14 @@ class Player
 let player=new Player("Sachin","Tendulkar");
 //player.secretMethod();//Property 'secretMethod' is private and only accessible within class 'Player'.
 //player.first="MS";//Cannot assign to 'first' because it is a read-only property.
+
+
+//Below code is same as we declare property as public and then assign with this.propName=propValue
+class Meow
+{
+    constructor(public name:string, public age:number)
+    {
+
+    }
+}
+const m=new Meow("aman",100)

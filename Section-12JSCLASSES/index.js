@@ -41,6 +41,11 @@ class Player {
     }
     this.#life = life;
   }
+
+  static description = "Player class represents a player in the game";
+  static info() {
+    return "This is a static method providing class-level information.";
+  }
 }
 
 const p1 = new Player("Alice", 25);
@@ -72,3 +77,5 @@ console.log(p1.getSecret());
 console.log(p1.info);
 p1.lifeinfo = 100;
 console.log(p1);
+console.log(Player.description); //accessing static property using class name dot property name
+console.log(Player.info()); //accessing static method using class name dot method name

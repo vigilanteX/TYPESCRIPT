@@ -1,4 +1,5 @@
-var employee = {
+"use strict";
+const employee = {
     firstName: "John",
     lastName: "Doe",
     age: 30,

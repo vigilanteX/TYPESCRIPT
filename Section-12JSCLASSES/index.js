@@ -30,6 +30,17 @@ class Player {
   #privatemethod() {
     console.log("This is a private method");
   }
+  get info() {
+    return `Name: ${this.name}, Age: ${this.age}, Score: ${this.score}, Life: ${
+      this.#life
+    }`;
+  }
+  set lifeinfo(life) {
+    if (life < 0) {
+      throw new Error("Life cannot be negative");
+    }
+    this.#life = life;
+  }
 }
 
 const p1 = new Player("Alice", 25);
@@ -56,3 +67,8 @@ console.log(p1);
 //setting and getting private property using methods
 p1.setSecret("AWS SECRET");
 console.log(p1.getSecret());
+
+//accessing getter
+console.log(p1.info);
+p1.lifeinfo = 100;
+console.log(p1);

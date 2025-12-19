@@ -2,11 +2,13 @@ class Player {
   //this approach is called field declaration and is good when we have default values or hardcoded values
   score = 0;
   #life = 10;
+  #secret;
   constructor(name, age) {
     this.name = name;
     this.age = age;
     // this.score = 0;
     // this.life = 10;
+    this.#privatemethod();
     console.log("Player constructor created!");
   }
   taunt() {
@@ -18,6 +20,15 @@ class Player {
   decrementLife() {
     //changed this.life to this.#life to point to private property
     this.#life -= 1;
+  }
+  setSecret(secret) {
+    this.#secret = secret;
+  }
+  getSecret() {
+    return this.#secret;
+  }
+  #privatemethod() {
+    console.log("This is a private method");
   }
 }
 
@@ -41,3 +52,7 @@ console.log(p1);
 //to avoid this we use private properties
 //we avoid by using #propname in class
 //p1.#life = 199; //Uncaught SyntaxError: Private field '#life' must be declared in an enclosing class
+
+//setting and getting private property using methods
+p1.setSecret("AWS SECRET");
+console.log(p1.getSecret());

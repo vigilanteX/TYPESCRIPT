@@ -48,34 +48,41 @@ class Player {
   }
 }
 
-const p1 = new Player("Alice", 25);
-console.log(p1);
-p1.taunt();
-console.log(p1.name);
-console.log(p1.age);
-p1.incrementScore();
-p1.incrementScore();
-console.log(p1);
-p1.decrementLife();
-console.log(p1);
-p1.decrementLife();
-console.log(p1);
-
-//why to use provate properties
-// p1.life = 100;
+// const p1 = new Player("Alice", 25);
 // console.log(p1);
-//we were able to change life property from outside the class which is not good
-//to avoid this we use private properties
-//we avoid by using #propname in class
-//p1.#life = 199; //Uncaught SyntaxError: Private field '#life' must be declared in an enclosing class
+// p1.taunt();
+// console.log(p1.name);
+// console.log(p1.age);
+// p1.incrementScore();
+// p1.incrementScore();
+// console.log(p1);
+// p1.decrementLife();
+// console.log(p1);
+// p1.decrementLife();
+// console.log(p1);
 
-//setting and getting private property using methods
-p1.setSecret("AWS SECRET");
-console.log(p1.getSecret());
+// //why to use provate properties
+// // p1.life = 100;
+// // console.log(p1);
+// //we were able to change life property from outside the class which is not good
+// //to avoid this we use private properties
+// //we avoid by using #propname in class
+// //p1.#life = 199; //Uncaught SyntaxError: Private field '#life' must be declared in an enclosing class
 
-//accessing getter
-console.log(p1.info);
-p1.lifeinfo = 100;
-console.log(p1);
-console.log(Player.description); //accessing static property using class name dot property name
-console.log(Player.info()); //accessing static method using class name dot method name
+// //setting and getting private property using methods
+// p1.setSecret("AWS SECRET");
+// console.log(p1.getSecret());
+
+// //accessing getter
+// console.log(p1.info);
+// p1.lifeinfo = 100;
+// console.log(p1);
+// console.log(Player.description); //accessing static property using class name dot property name
+// console.log(Player.info()); //accessing static method using class name dot method name
+
+class AdminPlayer extends Player {
+  #isAdmin = true;
+  meowmaster = true;
+}
+let admin = new AdminPlayer();
+console.log(admin);

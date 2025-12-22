@@ -7,3 +7,8 @@ function identity(item) {
 }
 const i = identity("aman");
 console.log(i);
+function getRamdomElement(element) {
+    return element[2];
+}
+const j = getRamdomElement(['a', 'b', 'c', 'd']);
+console.log(j);

@@ -8,3 +8,10 @@ function identity<Type>(item:Type):Type
 
 const i=identity<string>("aman")
 console.log(i)
+
+function getRamdomElement<Type>(element:Type[]):Type
+{
+    return element[2]
+}
+const j=getRamdomElement<string>(['a','b','c','d'])
+console.log(j)

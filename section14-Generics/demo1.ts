@@ -19,3 +19,10 @@ const j=getRamdomElement<string>(['a','b','c','d'])
 console.log(j)
 //from below we didn't specify type<T> but it infered from input arrAY
 const infer=getRamdomElement([1,2,3,4,5,6])
+
+
+function getRandElements<T,U>(obj1:T,obj2:U)
+{
+    return {...obj1,...obj2}
+}
+console.log(getRandElements({name:"Aman"},{age:1000}))

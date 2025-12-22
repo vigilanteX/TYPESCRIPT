@@ -44,3 +44,10 @@ function getMyLength<T extends MyNum>(data:T):number
 {
           return data.lenght;
 }
+
+//defaulting type
+function makeEmptyArray<T=string>():T[]
+{
+    return [];
+}
+makeEmptyArray()

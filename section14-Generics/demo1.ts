@@ -11,7 +11,9 @@ console.log(i)
 
 function getRamdomElement<Type>(element:Type[]):Type
 {
-    return element[2]
+    const x=Math.floor(Math.random()*(element.length-1))
+    console.log(x)
+    return element[x]
 }
 const j=getRamdomElement<string>(['a','b','c','d'])
 console.log(j)

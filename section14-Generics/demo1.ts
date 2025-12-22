@@ -29,8 +29,8 @@ console.log(getRandElements({name:"Aman"},{age:1000}))
 
 
 
-function extendingType<T extends object,U extends object>(obj1:T,obj2:U)
-{
-    return {...obj1,...obj2}
-}
-console.log(extendingType({name:"Aman"},12))
+// function extendingType<T extends object,U extends object>(obj1:T,obj2:U)
+// {
+//     return {...obj1,...obj2}
+// }
+// console.log(extendingType({name:"Aman"},12))

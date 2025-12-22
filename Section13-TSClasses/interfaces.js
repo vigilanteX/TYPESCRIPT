@@ -1,3 +1,4 @@
+"use strict";
 //way 1
 // class ColorImpl implements IColor
 // {
@@ -9,14 +10,13 @@
 // const color1=new ColorImpl();
 // console.log(color1.getColor())
 //way2
-var ColorImpl2 = /** @class */ (function () {
-    function ColorImpl2(color) {
+class ColorImpl2 {
+    constructor(color) {
         this.color = color;
     }
-    ColorImpl2.prototype.getColor = function () {
+    getColor() {
         return this.color;
-    };
-    return ColorImpl2;
-}());
-var impl2 = new ColorImpl2('red');
+    }
+}
+const impl2 = new ColorImpl2('red');
 console.log(impl2.getColor());

@@ -1,7 +1,7 @@
 class Employee
 {
-    private x:string;
-    private y:string;
+    private x!:string;
+    private y!:string;
     // constructor(a:string,b:string)
     // {
     //     this.x=a;

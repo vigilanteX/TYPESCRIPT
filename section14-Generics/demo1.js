@@ -20,3 +20,6 @@ function getRandElements(obj1, obj2) {
     return Object.assign(Object.assign({}, obj1), obj2);
 }
 console.log(getRandElements({ name: "Aman" }, { age: 1000 }));
+function getMyLength(data) {
+    return T.length;
+}

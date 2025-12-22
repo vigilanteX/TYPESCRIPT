@@ -34,3 +34,13 @@ console.log(getRandElements({name:"Aman"},{age:1000}))
 //     return {...obj1,...obj2}
 // }
 // console.log(extendingType({name:"Aman"},12))
+
+
+interface MyNum{
+    lenght:number
+}
+
+function getMyLength<T extends MyNum>(data:T):number
+{
+          return data.lenght;
+}

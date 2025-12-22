@@ -51,3 +51,25 @@ function makeEmptyArray<T=string>():T[]
     return [];
 }
 makeEmptyArray()
+
+
+
+interface MovieDetail
+{
+    name:string,
+    type:string
+}
+
+function mymoviedetail():MovieDetail
+{
+  return {name:'titanic',type:'mmmm'}
+}
+
+class Movie<T>
+{
+    addMovie(movie:T[])
+    {
+      
+    }
+
+}

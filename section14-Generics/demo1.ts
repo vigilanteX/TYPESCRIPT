@@ -17,3 +17,5 @@ function getRamdomElement<Type>(element:Type[]):Type
 }
 const j=getRamdomElement<string>(['a','b','c','d'])
 console.log(j)
+//from below we didn't specify type<T> but it infered from input arrAY
+const infer=getRamdomElement([1,2,3,4,5,6])
